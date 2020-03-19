@@ -5,7 +5,12 @@ so Enzyme shallow renderer in your mocha unit tests can traverse
 Super fast iteration compared to Jest, suitable for test-driven development.
 
 ## Try it
+
+Start test-driven development
 ```bash
 npm ci
 npm run testw
 ```
+
+Start editing files in `tests/*` or `src/*`
+
