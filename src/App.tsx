@@ -1,5 +1,7 @@
 import React from 'react';
-import {Text, View, Button} from 'react-native';
+import {Text, View, Button, TouchableOpacity} from 'react-native';
+import styled from 'styled-components/native';
+import { CustomComponent } from './CustomComponent';
 
 export interface AppProps {
   count:number;
@@ -8,9 +10,15 @@ export interface AppProps {
 
 export const app = (props:AppProps) => {
   return (
-    <View>
+
+    <CustomView>
+      <CustomComponent text={`${props.count+1}`} />
       <Text>{props.count}</Text>
-      <Button title={"add"} onPress={props.increment}></Button>
-    </View>
+      <TouchableOpacity onPress={props.increment}>
+        <View>Add</View>
+      </TouchableOpacity>
+    </CustomView>
   )
 }
+
+export const CustomView = styled.View``

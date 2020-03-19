@@ -1,6 +1,7 @@
-const React = require("react");
 const createReactClass = require('create-react-class');
 const PropTypes = require('prop-types');
+const path = require('path');
+const components = require(path.resolve('./mock'));
 
 const createClass = (type) =>{
   return createReactClass({
@@ -12,8 +13,7 @@ const createClass = (type) =>{
   });
 }
 
-module.exports = {
-  View: createClass("View"),
-  Text: createClass("Text"),
-  Button: createClass("Button"),
-};
+const mockObjects = {}
+components.map(it=>{mockObjects[it]=createClass(it)});
+
+module.exports = mockObjects;

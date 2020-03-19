@@ -1,10 +1,11 @@
-# Unit tests in typescript (Proof of concept)
+# Unit tests in typescript
 Using custom mocha compiler (compiler.js) to mock react native Component modules (react-native.mock.js)
 so Enzyme shallow renderer in your mocha unit tests can traverse
 
+Super fast iteration compared to Jest, suitable for test-driven development.
 
 ## Try it
 ```bash
 npm ci
-npm run test
+npm run testw
 ```
