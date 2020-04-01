@@ -1,4 +1,4 @@
-# Blazing fast Unit testing for React Native propject in Typescript
+# Blazing fast Unit testing for React Native project in Typescript
 
 Jest is slow
 
